@@ -29,7 +29,11 @@ function main(){
 
 
 document.onload = function(){
+    console.log("onload");
     setTimeout( function(){
+        console.log("setTimeout");
         main();
     }, 1000);
 }
+
+console.log("index.js loaded?");
