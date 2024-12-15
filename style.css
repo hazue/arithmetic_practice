@@ -3,8 +3,13 @@ Assume there will be ONLY ONE form
 */
 form {
     width: 100%;
-    margin: auto;
+    min-width: 500px;
+    margin: 100px 10%;
 }
+
+/*
+TODO: add quick responsive loading for personal mobile use
+*/
 
 .question-container{
     display: block;
