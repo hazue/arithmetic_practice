@@ -28,7 +28,7 @@ function main(){
 }
 
 
-document.onload = function(){
+document.body.onload = function(){
     console.log("onload");
     setTimeout( function(){
         console.log("setTimeout");
