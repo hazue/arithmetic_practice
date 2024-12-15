@@ -1,0 +1,22 @@
+/*
+Assume there will be ONLY ONE form
+*/
+form {
+    width: 100%;
+    margin: auto;
+}
+
+.question-container{
+    display: block;
+}
+
+.question-container label{
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+}
+
+.question-container input{
+    display: inline-block;
+    width: 30px;
+}
