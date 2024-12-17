@@ -24,7 +24,10 @@ function main(){
     elem_Main = document.getElementsByTagName("main")[0];
     elem_Form = document.createElement("form");
     elem_Main.appendChild(elem_Form);
-    addQuestion(elem_Form);
+
+    for(i=0;i<5;i++){
+        addQuestion(elem_Form);
+    }
 }
 
 
