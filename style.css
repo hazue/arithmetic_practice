@@ -14,15 +14,17 @@ TODO: add quick responsive loading for personal mobile use
 .question-container{
     display: block;
     margin: 10px auto;
+    font-size: 24px;
 }
 
 .question-container label{
-    width: 80px;
+    width: 120px;
     display: inline-block;
     text-align: center;
 }
 
 .question-container input{
     display: inline-block;
-    width: 30px;
+    width: 70px;
+    height: 45px;
 }
