@@ -21,11 +21,11 @@ TODO: add quick responsive loading for personal mobile use
     width: 120px;
     display: inline-block;
     text-align: center;
-    margin: 3px auto;
+    margin: 10px auto;
 }
 
 .question-container input{
     display: inline-block;
     width: 60px;
-    height: 40px;
+    height: 35px;
 }
