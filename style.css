@@ -13,6 +13,7 @@ TODO: add quick responsive loading for personal mobile use
 
 .question-container{
     display: block;
+    margin: 10px auto;
 }
 
 .question-container label{
