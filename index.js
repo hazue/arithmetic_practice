@@ -20,6 +20,23 @@ function addQuestion(elemForm) {
     
 }
 
+var timer_stopped = false;
+function timerCounting(intSeconds){
+    if (timer_stopped === true){
+        return;
+    }
+
+    setTimeout( function(){
+        intSeconds++;
+        document.getElementById("timer").innerText = intSeconds;
+        timerCounting(intSeconds);
+    }, 1000 );
+}
+
+function stopTimer(){
+    timer_stopped = true;
+}
+
 function main(){
     elem_Main = document.getElementsByTagName("main")[0];
     elem_Form = document.createElement("form");
