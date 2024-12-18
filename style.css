@@ -18,10 +18,10 @@ TODO: add quick responsive loading for personal mobile use
 }
 
 .question-container label{
+    float:left;
     width: 120px;
-    display: inline-block;
     text-align: center;
-    padding: 5px auto;
+    margin-top: 4px;
 }
 
 .question-container input{
