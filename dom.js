@@ -16,7 +16,9 @@ function fnGenerateQuestionForm(isFirstLoad){
 
 
     for(i=0;i<5;i++){
-        elem_Form.appendChild( fnGenerateQuestion(isFirstLoad) );
+        elemQuestion = fnGenerateQuestion(isFirstLoad);
+        elemQuestion.id = "question-container-" + i;
+        elem_Form.appendChild( elemQuestion );
     }
 }
 
@@ -37,10 +39,19 @@ function fnGenerateQuestion(isFirstLoad) {
 
     elemQuestionInput = document.createElement("input");
     elemQuestionInput.type = "text";
+    fnSetQuestionData(elemQuestionInput, intRandom1, intRandom2);
     elemQuestionContainer.appendChild(elemQuestionInput);
+
+    elemAnswerCorrectOrNot = document.createElement("div");
+    elemAnswerCorrectOrNot.className = "answer-mark";
+    elemAnswerCorrectOrNot.innerHTML = "";  //reset answer mark
+    elemQuestionContainer.appendChild(elemAnswerCorrectOrNot);
 
     return elemQuestionContainer;
 }
+
+
+
 
 
 
@@ -65,7 +76,8 @@ function fnToggleTimer(){
     timer_stopped = !timer_stopped;
     if(timer_stopped){
         this.innerText = ">";
-        return
+        fnCheckQuestionAnswers();
+        return;
     }
 
     this.innerText = "||";
@@ -74,6 +86,7 @@ function fnToggleTimer(){
     fnGenerateQuestionForm(false);
 }
 
+// NOTE: timer is slightly slower than actual time, probably due to Decimal Calculation + I/O + UI update
 function fnUpdateTimerText(fltSeconds){
     if (timer_stopped === true){
         return;
