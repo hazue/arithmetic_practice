@@ -38,7 +38,7 @@ function fnGenerateQuestion(isFirstLoad) {
     elemQuestionContainer.appendChild(elemQuestionLabel);
 
     elemQuestionInput = document.createElement("input");
-    elemQuestionInput.type = "text";
+    elemQuestionInput.type = "number";
     fnSetQuestionData(elemQuestionInput, intRandom1, intRandom2);
     elemQuestionContainer.appendChild(elemQuestionInput);
 
