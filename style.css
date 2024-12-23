@@ -19,7 +19,7 @@ Assume there will be ONLY ONE form
 form {
     width: 100%;
     min-width: 500px;
-    margin: 30px 10%;
+    margin: 20px 10px 10px 20px;
 }
 
 
@@ -32,7 +32,7 @@ TODO: add quick responsive loading for personal mobile use
 .question-container{
     display: inline-block;
     min-width: 300px;
-    margin: 10px auto;
+    margin: 8px auto;
 }
 
 .question-container label{
@@ -80,10 +80,10 @@ TODO: add quick responsive loading for personal mobile use
 .timer-container button {
     float: left;
     border: none;
-    border-radius: 20px;
+    border-radius: 38px;
     margin-right: 18px;
-    padding: 10px 16px;
-    font-size: 27px;
+    padding: 10px 18px;
+    font-size: 29px;
 }
 
 .timer-container label {
