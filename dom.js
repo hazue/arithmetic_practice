@@ -79,13 +79,12 @@ function fnUpdateTimerText(fltSeconds){
         return;
     }
     
-    fltSeconds +=0.1;
     setTimeout( function(){
+        fltSeconds +=0.1;
         fnUpdateTimerText(fltSeconds);
-    }, 93 );
 
-    
-    document.getElementById("TimerText").innerText = fltSeconds.toFixed(1);
+        //put this line last just in case decimal rounding takes more time than expected
+        document.getElementById("TimerText").innerText = fltSeconds.toFixed(1);
+    }, 100 );
 
-    
 }
