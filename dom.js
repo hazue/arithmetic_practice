@@ -36,7 +36,7 @@ function fnGenerateQuestion(isFirstLoad) {
             intRandom1 = getRoundedInteger(11,99);
         }
         intRandom2 = getRoundedInteger(11,99);
-        while(intRandom2 % 10 === 0){
+        while(intRandom2 % 10 === 0 || intRandom2 === intRandom1){
             intRandom2 = getRoundedInteger(11,99);
         }
     }
