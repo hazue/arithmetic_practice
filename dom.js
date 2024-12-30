@@ -32,7 +32,13 @@ function fnGenerateQuestion(isFirstLoad) {
         intRandom2 = "XX";
     }else{
         intRandom1 = getRoundedInteger(11,99);
+        while(intRandom1 % 10 === 0){
+            intRandom1 = getRoundedInteger(11,99);
+        }
         intRandom2 = getRoundedInteger(11,99);
+        while(intRandom2 % 10 === 0){
+            intRandom2 = getRoundedInteger(11,99);
+        }
     }
     elemQuestionLabel.innerText = intRandom1 + " + " + intRandom2 + " = ";
     elemQuestionContainer.appendChild(elemQuestionLabel);
